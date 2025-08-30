@@ -54,7 +54,7 @@ body {
     color: #ffc107;
 }
 
-/* Menú */
+/* M */
 .caidanav ul {
     list-style: none;
     display: flex;              /* hace que estén en fila */
@@ -89,7 +89,7 @@ body {
 #portadaid {
     background-image: url('/assets/vet1.jpg');
     margin: 2px;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255); /* text0 */
     text-align: center;
     background-repeat: no-repeat; 
     background-size: cover; 
@@ -141,8 +141,8 @@ body {
 
 .cajaservicios {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 /* bloq serv */
@@ -207,8 +207,8 @@ body {
 
 .sociosbloqdiv {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .socioimg1,
@@ -292,8 +292,3 @@ body {
     .introd {
         font-size: 2rem;
     }
-    .sociosbloqdiv {
-        grid-template-columns: 1fr;
-        grid-template-columns: 2;
-    }
-}
