@@ -1,0 +1,298 @@
+/* Paleta de colores */
+:root {
+    --primary-color: #0d6efd; /* Azul */
+    --secondary-color: #6c757d; /* Gris */
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --heading-font: 'Arial', sans-serif;
+    --body-font: 'Helvetica', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: var(--body-font);
+    overflow-x: hidden; /* evitar scroll lateral */
+}
+
+/* HEADER y NAVBAR */
+
+.nav1 {
+    background-color: var(--primary-color);
+    height: 60px;                 
+    display: flex;
+    align-items: center;          
+    padding: 0 20px;              
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Contenedor logo + menú */
+.nav1 .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo */
+.nav2 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav2:hover {
+    color: #ffc107;
+}
+
+/* Menú */
+.caidanav ul {
+    list-style: none;
+    display: flex;              /* hace que estén en fila */
+    flex-direction: row;        /* horizontal */
+    justify-content: flex-end;  /* pegados a la derecha */
+    align-items: center;        
+    gap: 25px;                  /* espacio entre links */
+    margin: 0;
+    padding: 0;
+}
+
+/* navegación */
+.caidanav ul li {
+    display: inline-block;      /* asegura que estén en línea */
+}
+
+.navenlace {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navenlace:hover {
+    color: #ffc107;
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* PORTADA */
+#portadaid {
+    background-image: url('/assets/vet1.jpg');
+    margin: 2px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    box-shadow: -1px 1px 7px 0px rgb(106, 106, 106);
+    background-position: center;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.introd {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.introd1 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.boton1 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.boton1:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-2px);
+}
+
+/* SERVICIOS */
+.servicios1 {
+    padding: 80px 20px;
+    background: var(--light-color);
+    text-align: center;
+}
+
+.servicioh2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.cajaservicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Tarjetas de servicios */
+.comida img{
+    width: 60%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.esteticaimg{
+    width:60%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.vetimg{
+    width: 60%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.accesoriosimg {
+    width: 60%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.comida:hover img,
+.estetica:hover .esteticaimg,
+.vet:hover .vetimg,
+.accesorios:hover .accesoriosimg {
+    transform: scale(1.05);
+}
+
+/* NOSOTROS */
+.nosotros1 {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.nosotros1 h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* SOCIOS */
+.sociosbloq {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.sociosh2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.sociosbloqdiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.socioimg1,
+.socio2img,
+.socio3img,
+.socio4img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+/* SECTION COMIDA */
+.comida2 img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.comida2 {
+    width: 50%;
+    height: 50%;
+}
+
+/* CONTACTO */
+.Contacto {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.pcontacto {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.formc {
+    width: 100%;
+    background-color: #ebcc71;
+    border: none;;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.boton2 {
+    background-color: #ffc107;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.boton2:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+}
+
+/* FOOTER */
+.footer1 {
+    background-color: var(--dark-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.derechosfooter {
+    margin: 0;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .introd {
+        font-size: 2rem;
+    }
+    .sociosbloqdiv {
+        grid-template-columns: 1fr;
+    }
+}
